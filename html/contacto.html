@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Contacto</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:ital,wght@0,700;1,100;1,300&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href="../Css/styles.css">
+        <link rel="icon" href="../imagenes/favi2.png">
+        <script src='main.js'></script>
+    </head>
+    
+    <body>
+        <header class="header">
+
+            <nav class="header__nav">
+                <h1 class="header__title">LIGHTCREW</h1>
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link" href="../index.html">Home</a></li>
+                    <li class="header__item"><a class="header__link" href="trabajaconnosotros.html">Trabaja con nosotros</a></li>
+                    <li class="header__item"><a class="header__link" href="galeria.html">Galeria</a></li>
+                    <li class="header__item"><a class="header__link" href="contacto.html">Contacto</a></li>
+                    <li class="header__item"><a class="header__link" href="nuestrosinicios.html">Nuestros inicios</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <main class="main__contacto">
+            <!--tabla contacto-->
+            <div class="tabla__contacto">
+            <form action="" method="get" class="tabla">
+                <fieldset>
+                    <legend><h3>Datos de contacto</h3></legend>
+                    <ul class="main__list">
+                        <li>
+                            <label for="Nombre">Nombre:</label>
+                            <input type="Nombre" id="Nombre" placeholder="Introduzca su Nombre">
+                        </li>
+                        
+                        <li>
+                            <label  for="Apellido">Apellido:</label>
+                            <input type="Apellido" id="Apellido" placeholder="Introduzca su apellido">
+                        </li>
+                        
+                        <li>
+                            <label for="Email">Correo Electronico:</label>
+                            <input type="Email" id="Email" placeholder="Ejemplo@email.com">
+                        </li>
+                        <li>
+                            <label  for="Telefono">Telefono</label>
+                            <input type="text" id="Telefono" placeholder="+54-0000000000">
+                        </li>
+                        
+                        <li>
+                            <label  for="Consulta">Consulta:</label>
+                            <textarea name="Consulta" id="Consulta" cols="30" rows="10" placeholder="Describa su consulta"></textarea>
+                        </li>
+                        
+                        
+
+                        <li> 
+                            <label  for="desplegable">Forma de contacto</label>
+                            <select name="Forma de contacto" id="desplegable">
+                            <option value="Telefono">Telefono</option>
+                            <option value="Email">Email</option>
+                            </select>
+                            
+                        </li>
+                        
+                        <li>
+                            <label for="checkbox"><strong>Acepta terminos y condiciones</strong> </label>
+                            <input type="checkbox" value="1">
+                        </li>
+                        
+                        <li>
+                            <input type="reset" id="reset" value="Limpiar Formulario">
+                        </li>                  
+                        
+                        <li>
+                            <label id="Enviar" for="Submit"></label>
+                            <input type="submit" id="Enviar">
+                        </li>
+
+                    </ul>
+                </form>
+                </fieldset>
+                </div>
+                
+        </div>
+
+        <div class="Contacto__map">
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13140.730170232846!2d-58.42745267646933!3d-34.57424739866955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb577ac472193%3A0x2883add910b74677!2sMonumento%20a%20La%20Carta%20Magna%20y%20las%20Cuatro%20Regiones%20Argentinas%20-%20Monumento%20de%20los%20espa%C3%B1oles!5e0!3m2!1ses-419!2sar!4v1653522486941!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        </div>
+
+        </main>
+        <!--tabla contacto -->
+        <footer class="footer">
+            <div class="footer__contenedor">
+            <div class="footer__copyright"><strong>©Copyright 2021 LightCrew S.A. Todos los derechos reservados.</strong></div>
+            
+            <div class="footer__favicon">
+                    <a class="footer__link" href="https://www.facebook.com/"><img src="https://img.icons8.com/color/48/000000/facebook-new.png"/></a>
+                    <a class="footer__link" href="https://www.instagram.com"><img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"/></a>
+                    <a class="footer__link" href="https://ar.linkedin.com"><img src="https://img.icons8.com/color/48/000000/linkedin-2--v1.png"/></a>
+            </div>
+        </div>
+        </footer>
+        
+    </body>
+</html>
