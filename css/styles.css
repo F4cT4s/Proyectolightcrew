@@ -21,7 +21,7 @@ body{
 .header{
     background-color: #333;
     grid-area: nav;
-    height: 100px;
+    
     z-index: 100;
     top: 0px;
     margin-bottom: 10px;  
@@ -410,9 +410,9 @@ body{
     grid-template-rows: auto;
     grid-template-areas: "slider slider slider slider"
                          "slider slider slider slider"
-                         "h2 h2 h2 h2"
+                         ". h2 h2 ."
                          "txt txt txt txt"
-                         "list list list list";
+                         ". list list .";
 }
 
 
@@ -437,10 +437,42 @@ body{
     grid-area: h2;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(52, 139, 216);
+    color: rgb(30, 235, 91);
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-blend-mode: multiply,multiply;
     margin: 15px;
-
+    opacity: 0.9;
+    -webkit-animation: scale-in-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+
+@-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+
 
 
 
@@ -448,25 +480,29 @@ body{
     font-family: 'Roboto', sans-serif;
     display: flex;
     grid-area: txt;
-    background-color: rgb(52, 139, 216);
+    color: aliceblue;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     margin: 15px;
     padding: 15px;
     text-align: center;
     line-height: 2em;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .index__list{
 font-family: 'Roboto', sans-serif;
 display: flex;
 grid-area: list;
-background-color: rgb(52, 139, 216);
+color: aliceblue;
+background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+align-content: center;
+justify-content: center;
 margin: 15px;
 padding: 15px;
 line-height: 2em;
 height: auto;
 width: auto;
-opacity: 0.8;
+opacity: 0.9;
 }
 
 /*main trabaja*/
@@ -542,7 +578,7 @@ opacity: 0.8;
     align-self: center;
     justify-self: center;
     grid-column: 2 / 3;
-    background-color: rgb(52, 139, 216);
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     margin: 20px;
     padding: 20px;
     opacity: 0.8;
@@ -569,7 +605,7 @@ opacity: 0.8;
     grid-template-areas: "parrafo foto foto"
                          "parrafo foto foto"
                          "parrafo pie pie"
-                         "tabla tabla tabla";
+                         "video video tabla";
 }
 
 .main__parrafoi{
@@ -584,7 +620,8 @@ opacity: 0.8;
                          "texto texto";
     justify-content: center;
     align-items: center;
-    background-color: rgb(68, 125, 175);
+    color: aliceblue;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     margin: 15px;
     padding: 15px;
     opacity: 0.8;
@@ -594,12 +631,23 @@ opacity: 0.8;
     grid-area: h2t;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
+    color: rgb(51, 230, 16);
+
 }
     
 
 .inicios{
     display: flex;
     grid-area: texto;
+}
+
+/*video youtube*/
+.video{
+    display: flex;
+    grid-area: video;
+    justify-self: center;
+    align-self: center;
+    margin: 15px;
 }
 
 .main__imginicios{
@@ -620,7 +668,8 @@ opacity: 0.8;
 
 .main__pie{
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(52, 139, 216);
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    color: aliceblue;
     display: flex;
     margin: 15px;
     padding: 15px;
@@ -649,13 +698,13 @@ opacity: 0.8;
 /*tablas*/
 .main__tabla{
     
-    background-color: rgb(52, 139, 216);
-    padding: 20px;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);    padding: 20px;
     opacity: 0.8;
 }
 
 .tabla{
     font-family: 'Koulen', cursive;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     font-size: 20px;
     margin: 10px;
     padding: 15px;
@@ -663,12 +712,13 @@ opacity: 0.8;
 
 /*MODIFICADORES ESPECIFICOS DE TABLAS*/
 fieldset{
-    color: crimson;
+    color: rgb(51, 230, 16);
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 
 .tabla ul{
-    color: rgb(19, 233, 0);
-}
+    color: aliceblue}
+    
 
 .main__list li{
     padding: 5px;
@@ -676,15 +726,19 @@ fieldset{
 }
 
 .main__list input{
-    color: darkorchid;
+    color: rgb(29, 175, 10);
+    font-family: 'roboto';
+    font-size: 0.8em;
 }
 
 .main__list textarea{
-    color: crimson;
+    color: rgb(29, 175, 10);
+    font-family: 'roboto';
+    font-size: 0.8em;
 }
 
 .tabla td{
-    color: rgb(65, 221, 26);
+    color:aliceblue;
     padding: 10px;
 }
 
@@ -741,7 +795,7 @@ fieldset{
     grid-template-areas: 
                          "parrafo foto foto"
                          "parrafo pie pie"
-                         "tabla tabla tabla";
+                         " video video tabla";
 }
 
 .img__inicios{
@@ -763,9 +817,7 @@ fieldset{
 .footer__link{
     justify-self: center;
 }
-.footer__copyright{
-    display:none;
-}   
+  
     }
 
 
@@ -786,15 +838,16 @@ fieldset{
 .main__tabla{
     width: 100%;
 }
-
+/*
 .main__imgtrabaja{
     display: ;
 }
-
+*/
 /*galeria*/
-.galeria{
 
+/*.galeria{
 }
+*/
 
 /*contacto*/
 .tabla__contacto{
@@ -821,7 +874,8 @@ fieldset{
                          "foto foto foto"
                          "foto foto foto"
                          "pie pie pie"
-                         "tabla tabla tabla";
+                         ". tabla ."
+                         ". video .";
 }
 .img__inicios{
     height: 300px;
@@ -841,9 +895,7 @@ fieldset{
 .footer__link{
     justify-self: center;
 }
-.footer__copyright{
-    display:none;
-}   
+
     }
 
 /*MEDIDA 768*/
@@ -922,7 +974,8 @@ fieldset{
                          "foto foto foto"
                          "foto foto foto"
                          "pie pie pie"
-                         "tabla tabla tabla";
+                         ". tabla ."
+                         ". video .";
 }
 
 .img__inicios{
@@ -986,7 +1039,8 @@ fieldset{
                          "foto foto"
                          "foto foto"
                          "pie pie "
-                         "tabla tabla";
+                         "tabla tabla"
+                         "video video";
 }
 
 .img__inicios{
@@ -995,6 +1049,10 @@ fieldset{
 
 .main__parrafoi{
     line-height: 1.9em;
+}
+
+.video{
+    display: none;
 }
 
 .footer__contenedor{
@@ -1033,7 +1091,8 @@ fieldset{
     justify-content: center;
     align-content: center;
     grid-template-rows: 3fr;
-    grid-template-areas: "title title titel"
+    height: auto;
+    grid-template-areas: "title title title"
                           "item item item"
                           "item item item"; 
 } 
@@ -1086,6 +1145,10 @@ fieldset{
 
 .main__parrafoi{
     line-height: 2em;
+}
+
+.video{
+    display: none;
 }
 
 /*footer*/
@@ -1158,6 +1221,10 @@ fieldset{
 
 .img__inicios{
     height: 170px;
+}
+
+.video{
+    display: none;
 }
 
 .footer__contenedor{
