@@ -1178,6 +1178,8 @@ fieldset{
   width: 90%; 
   height: 90%; 
   object-fit: cover;
+  align-self: center;
+  justify-self: center;
 }
 
 .slider{
@@ -1189,7 +1191,7 @@ fieldset{
   gap: 10px;
   grid-template-rows: auto;
   overflow: hidden;
-  padding: 15px;
+  padding: 0px;
 }
 
 
@@ -1224,7 +1226,7 @@ fieldset{
 
 /*galeria*/
 .galeria{
-    height: 200px;
+    height: 180px;
 }
 #img8{display: none;}
 
