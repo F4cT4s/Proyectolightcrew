@@ -4,6 +4,7 @@
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Home</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +14,35 @@
         <script src='main.js'></script>
     </head>
     <body>
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><h1>LIGHTCREW</h1></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./html/trabajaconnosotros.html">Trabaja con nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./html/galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./html/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./html/nuestrosinicios.html">Nuestros inicios</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!--
         <header class="header">
             <div class="header__contenedor">
                 <div class="header__title"><h1 class="">LIGHTCREW</h1></div>
@@ -28,43 +58,65 @@
                 </div>
             </div>
         </header>
-        <main class="main__index">
-                                    
+    -->
+        <main class="">
+            <section class="slider my-5">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade " data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active align-items-center justify-items-center ">
+                        <img src="./assets/images/imagenindex.jpg" class="d-block w-100 shadow-1-strong rounded" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./assets/images/eurovision.png" class="d-block w-100 shadow-1-strong rounded" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./assets/images/tomorrow.jpg" class="d-block w-100 shadow-1-strong rounded" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./assets/images/qlimax.jpg" class="d-block w-100 shadow-1-strong rounded" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </section>                     
+            <!--
             <div class="slider">
-                
                 <div class=""><img class="slideimg" src="./assets/images/imagenindex.jpg" height=""></div>
                 <div class=""><img class="slideimg" src="./assets/images/eurovision.png" alt="" height=""></div>
                 <div class=""><img class="slideimg" src="./assets/images/tomorrow.jpg" alt=""></div>
                 <div><img class="slideimg" src="./assets/images/qlimax.jpg" alt=""></div>
             </div>
-
-            <div class="h2">
-                <h2>BIENVENIDOS A LIGHTCREW ARGENTINA</h2>
+            -->
+            
+            <div class="d-flex justify-content-center my-4">
+            <h2 id="h2" class="text-center shadow-1-strong rounded">BIENVENIDOS A LIGHTCREW ARGENTINA</h2></div>
+            
+            
+            <div  class="d-flex justify-content-center mx-5 ">
+                <p id="text" class="text-center shadow-1-strong rounded">
+                    Una empresa dedicada al diseño, planificacion y 
+                    produccion de puestas luminicas para grandes y medianos eventos. 
+                    Nos caracterizamos por la constante actualizacion en nuestros 
+                    equipos y siempre trabajando con la ultima tecnologia para poder 
+                    ofrecerte el mejor servicio.
+                    Contamos con los mejores profesionales
+                    </p>
             </div>
+                
 
-            <div class="main__parrafo">
-                <p class="p">
-                Una empresa dedicada al diseño, planificacion y 
-                produccion de puestas luminicas para grandes y medianos eventos. 
-                Nos caracterizamos por la constante actualizacion en nuestros 
-                equipos y siempre trabajando con la ultima tecnologia para poder 
-                ofrecerte el mejor servicio.
-                Contamos con los mejores profesionales
-                </p>
-                </div>
-                <div class="index__list">
-                    <ul class="main__list">
-                        <li class="main__item">Diseñadores especialmente entrenados en la planificacion y 
+                
+                <div class="mt-4 mb-5">
+                    <ul class="list-group align-items-center ">
+                        <li class="list-group-item ">Diseñadores especialmente entrenados en la planificacion y 
                         ejecucion de renders 3d para abarcar las infinitas posibilidades de tu
                         proyecto.
                         </li>
                         <br>
-                        <li class="main__item">Contamos con personal altamente calificado para poder llevar a 
+                        <li class="list-group-item">Contamos con personal altamente calificado para poder llevar a 
                         cabo el montaje de tu evento acorde a las necesidades de cada 
                         cliente.
                         </li>
                         <br>
-                        <li class="main__item">Tambien contamos con un plantel de operadores en constante 
+                        <li class="list-group-item">Tambien contamos con un plantel de operadores en constante 
                         entrenamiento en todas las consolas del mercado.
                         </li>
                     </ul>
@@ -73,17 +125,35 @@
             </div>
         </main>
             
-        
-        <footer class="footer">
+        <!--
+            <footer class="footer">
             <div class="footer__contenedor">
                 <div class="footer__copyright"><strong>©Copyright 2021 LightCrew S.A. Todos los derechos reservados.</strong></div>
             
                 <div class="footer__favicon">
-                    <a class="footer__link" href="https://www.facebook.com/"><img src="https://img.icons8.com/color/48/000000/facebook-new.png"/></a>
+                    <a class="footer__link" href="https://www.facebook.com"><img src="https://img.icons8.com/color/48/000000/facebook-new.png"/></a>
                     <a class="footer__link" href="https://www.instagram.com"><img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"/></a>
                     <a class="footer__link" href="https://ar.linkedin.com"><img src="https://img.icons8.com/color/48/000000/linkedin-2--v1.png"/></a>
                 </div>
             </div>
-        </footer>  
+        </footer>
+
+        -->
+        <div class="container-fluid padding-bottom-md">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+              
+                <div class="col-md-4 d-flex align-items-center">
+                <span id="copy" class="text">©Copyright 2021 LightCrew S.A. Todos los derechos reservados</span>
+              </div>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="https://www.facebook.com"><img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt=""></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://www.instagram.com"><img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png" alt=""></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://ar.linkedin.com"><img src="https://img.icons8.com/color/48/000000/linkedin-2--v1.png" alt=""></a></li>
+              </ul>
+            </footer>
+          </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>  
     </body>
 </html>
