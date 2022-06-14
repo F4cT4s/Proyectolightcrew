@@ -349,11 +349,28 @@ h2{
   }
 }
 
+h3{
+  font-family: 'Roboto', sans-serif;
+  color: aliceblue;
+  background-image: linear-gradient(60deg, #29323c 0%, #2e353d 100%);
+}
+
+h5{
+  font-family: 'Roboto', sans-serif;
+  color: aliceblue;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+
 
 p{
   font-family: 'Roboto', sans-serif;
   color: aliceblue;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+#inicios__txt{
+  line-height: 3 !important;
 }
 
 .list-group-item{
@@ -370,7 +387,7 @@ p{
 
 .col-md-4{
   font-family: 'Koulen', cursive;
-  font-size: 20px;
+  
   color: white;
 }
 
@@ -404,10 +421,45 @@ label{
   position:relative;
   height:0;
   }
-  .map-container iframe{
+
+.map-container iframe{
   left:0;
   top:0;
   height:100%;
   width:100%;
   position:absolute;
   }
+
+
+
+/*MEDIDA 1200*/
+@media screen and (max-width: 1200px){
+        
+ 
+
+}
+
+
+/*MEDIDA 1024*/
+@media screen and (max-width: 1024px){
+}
+
+/*MEDIDA 768*/
+@media screen and (max-width: 768px){
+      
+}
+
+/*MEDIDA 600*/
+@media screen and (max-width: 600px){
+  
+  }
+
+/*MEDIA 480*/
+@media screen and (max-width: 480px){
+
+
+}
+/*MEDIA 320*/
+@media screen and (max-width: 320px){
+  
+  }   
