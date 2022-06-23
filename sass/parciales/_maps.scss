@@ -1,0 +1,21 @@
+@import "fonts";
+@import "colores";
+
+
+$body: (
+    "imagen": url(../assets/images/back3.jpg),
+    "repeat": no-repeat,
+    "attach": fixed,
+    "position": center
+);
+
+@mixin genericos{
+    font-family: $fonths;
+    color: $colorblanco;
+    background-image: $gradiente;
+}
+
+@mixin genericos2{
+    font-family: $fonttext;
+    color: $colorblanco;   
+}
