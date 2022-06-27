@@ -113,13 +113,14 @@ label{
 }
 
 
-#imagen_trabaja{
+#imagen_trabaja.shadow-1-strong{
     max-width: 700px !important;
     max-height: 700px !important;
+    opacity: 1 !important;
     object-fit: cover;
 }
 
-/*EXTEND-- ES EN EL UNICO LUGAR QUE ENCONTRE PONERLO Y AUN ASI NO LO MODIFICO POR QUE NO ME ES NECESARIO, IGUALMENTE LA TEORIA DE SU FUNCION LA ENTIENDO, ESTOY COMPLETAMENTE ABIERTO A COMENTARIOS Y SUGERENCIAS*/
+/*EXTEND-- ES EN EL UNICO LUGAR QUE ENCONTRE PONERLO Y AUN ASI NO LO MODIFICO POR QUE NO ME ES NECESARIO, IGUALMENTE LA TEORIA DE SU FUNCION LA ENTIENDO, ESTOY COMPLETAMENTE ABIERTO A COMENTARIOS Y SU*/
 .favi__facebook:hover{
     -webkit-animation: swing-in-top-fwd 1.0s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 	        animation: swing-in-top-fwd 1.0s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
@@ -159,11 +160,11 @@ label{
 .favi__instagram:hover{
     @extend .favi__facebook:hover
 
-}
+};
 
 .favi__linkedin:hover{
     @extend .favi__facebook:hover
-}
+};
 
 
 @media screen and (max-width: 1280px){
@@ -171,11 +172,22 @@ label{
             max-width: 600px !important;
             max-height: 600px !important;
         }
+        
     }
+@media screen and(max-width: 1024px){
+    .carousel-item{
+        max-height: 420px !important;
+        object-fit: fill;
+    }
+    
+}
 @media screen and (max-width: 768px){
         #imagen_trabaja{
             max-width: 500px !important;
             max-height: 500px !important;
+        }
+        .carousel-item{
+            max-height: 370px !important;
         }
     }
 
@@ -184,8 +196,41 @@ label{
             max-width: 400px !important;
             max-height: 400px !important;
         }
+        .carousel-item{
+            max-height: 350px !important;
+        }
     }
 
     @media screen and (max-width: 580px){   
         #imagen_trabaja{ display: none;
-    }}
+            }
+        .carousel-item{
+                max-height: 300px !important;
+            }
+    }
+
+@media screen and (max-width: 460px){
+    .carousel-item{
+        max-height: 190px !important;
+    }
+    #copy{display: none}
+    label{
+        @include genericos2;
+        font-size: ($size)-3;
+    }
+
+    #contacto{
+        margin: 8px !important;
+    }
+
+    #inicios__txt{
+        line-height: ($line)-1;
+    }
+    h5{
+        font-size: ($ten)+7;
+    }
+    h3{
+        font-size: ($ten)+9;
+    }
+}
+    
